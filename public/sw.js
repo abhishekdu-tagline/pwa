@@ -3,12 +3,12 @@ this.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(cacheData).then((cache) => {
       cache.addAll([
-        "/static/js/bundle.js",
-        "/static/js/main.chunk.js",
-        "/static/js/vendors~main.chunk.js",
-        "/index.html",
-        "/",
-        "/users",
+        "/pwa/static/js/bundle.js",
+        "/pwa/static/js/main.chunk.js",
+        "/pwa/static/js/vendors~main.chunk.js",
+        "/pwa/index.html",
+        "/pwa/",
+        "/pwa/users",
       ]);
     })
   );
